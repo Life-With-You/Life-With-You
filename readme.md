@@ -21,4 +21,4 @@
 
 [脑壳疼](https://life-with-you.github.io/svg/)
 
-[垃圾桶](https://life-with-you.github.io/trash/)
+[垃圾桶](https://life-with-you.github.io/JavaScript/trash/)
