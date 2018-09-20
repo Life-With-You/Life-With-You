@@ -1,11 +1,9 @@
 [ajax搞笑大全](https://Life-With-You.github.io/ajax/)
-  https://Life-With-You.github.io/ajax/ 请于手机端形式打开
-
+ 请于手机端形式打开
+ 
 [bootstion轮播图简略](https://Life-With-You.github.io/bootstrap) 
-https://Life-With-You.git.github.io/bootstrap
 
 [统计排行](https://Life-With-You.github.io/css3/tongjipaihang/) 
-https://Life-With-You.git.github.io/css3/tongjipaihang/
 
 [美化按钮和旋转图形](https://Life-With-You.github.io/css3/)
 
