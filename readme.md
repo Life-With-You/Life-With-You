@@ -20,3 +20,5 @@
 [验证码](https://Life-With-You.github.io/JavaScript/identifying-code.html)
 
 [脑壳疼](https://life-with-you.github.io/svg/)
+
+[垃圾桶](https://life-with-you.github.io/trash/)
