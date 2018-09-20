@@ -1,0 +1,73 @@
+.box {
+  background: pink;
+  width: 500px;
+  margin: 50px auto;
+}
+.box .side {
+  display: inline-block;
+  vertical-align: middle;
+  background: coral;
+  width: 100px;
+  height: 54px;
+  margin: 10px;
+}
+.box .side .svg {
+  width: 100px;
+  height: 54px;
+}
+.box .side .svg .circle {
+  fill: none;
+  stroke: #f3d9d9;
+  stroke-width: 3;
+}
+.box .side .svg .circle-dot {
+  fill: none;
+  stroke: red;
+  stroke-width: 3;
+  stroke-dasharray: 70;
+  stroke-dashoffset: 0;
+}
+.box .side .inner {
+  text-align: center;
+}
+.box .side i {
+  display: inline-block;
+  width: 6px;
+  height: 20px;
+  background: pink;
+  -webkit-animation: move 0.8s infinite;
+          animation: move 0.8s infinite;
+}
+.box .side .strip-one {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.box .side .strip-two {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.box .side .strip-three {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+@-webkit-keyframes move {
+  0% {
+    opacity: 0.5;
+    height: 20px;
+  }
+  100% {
+    opacity: 0.8;
+    height: 10px;
+  }
+}
+@keyframes move {
+  0% {
+    opacity: 0.5;
+    height: 20px;
+  }
+  100% {
+    opacity: 0.8;
+    height: 10px;
+  }
+}
+/*# sourceMappingURL=./style.css.map */

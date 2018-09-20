@@ -1,0 +1,171 @@
+/*body{
+    background: black;
+}*/
+.boxMove {
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  -webkit-perspective-origin: 10% 10%;
+          perspective-origin: 10% 10%;
+}
+.box3D {
+  width: 100px;
+  height: 100px;
+  float: left;
+  position: relative;
+  margin: 100px 200px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50% 50px;
+          transform-origin: 50% 50% 50px;
+  -webkit-transform: rotateX(0deg) rotateY(15deg);
+          transform: rotateX(0deg) rotateY(15deg);
+  -webkit-animation: time 5s infinite;
+          animation: time 5s infinite;
+}
+.box3D .side-left {
+  line-height: 100px;
+  text-align: center;
+  background: currentColor;
+  box-shadow: 0 0 20px currentColor;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: #00CCFF;
+  -webkit-transform-origin: 0 0% 0;
+          transform-origin: 0 0% 0;
+  -webkit-transform: rotateY(-90deg) translateZ(30px);
+          transform: rotateY(-90deg) translateZ(30px);
+}
+.box3D .side-top {
+  line-height: 100px;
+  text-align: center;
+  background: currentColor;
+  box-shadow: 0 0 20px currentColor;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: red;
+  -webkit-transform-origin: 0 0% 0;
+          transform-origin: 0 0% 0;
+  -webkit-transform: rotateX(90deg) translateZ(30px);
+          transform: rotateX(90deg) translateZ(30px);
+}
+.box3D .side-bottom {
+  line-height: 100px;
+  text-align: center;
+  background: currentColor;
+  box-shadow: 0 0 20px currentColor;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: #00aa88;
+  -webkit-transform-origin: 0 100% 0;
+          transform-origin: 0 100% 0;
+  -webkit-transform: rotateX(-90deg) translateZ(30px);
+          transform: rotateX(-90deg) translateZ(30px);
+}
+.box3D .side-right {
+  line-height: 100px;
+  text-align: center;
+  background: currentColor;
+  box-shadow: 0 0 20px currentColor;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: yellow;
+  -webkit-transform-origin: 100% 0 0;
+          transform-origin: 100% 0 0;
+  -webkit-transform: rotateX(90deg) rotateY(-90deg) translateZ(-30px);
+          transform: rotateX(90deg) rotateY(-90deg) translateZ(-30px);
+}
+.box3D .side-up {
+  line-height: 100px;
+  text-align: center;
+  background: currentColor;
+  box-shadow: 0 0 20px currentColor;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: orange;
+  -webkit-transform: translateZ(130px);
+          transform: translateZ(130px);
+}
+.box3D .side-down {
+  line-height: 100px;
+  text-align: center;
+  background: currentColor;
+  box-shadow: 0 0 20px currentColor;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: #7a43b6;
+  -webkit-transform: translateZ(-30px);
+          transform: translateZ(-30px);
+}
+.box3D .radius {
+  border-radius: 50%;
+}
+.box3D .jiao {
+  border-radius: 5px;
+}
+@-webkit-keyframes time {
+  0% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+            transform: rotateX(0deg) rotateY(0deg);
+  }
+  16.6% {
+    -webkit-transform: rotateX(0deg) rotateY(180deg);
+            transform: rotateX(0deg) rotateY(180deg);
+  }
+  33.2% {
+    -webkit-transform: rotateX(0deg) rotateY(270deg);
+            transform: rotateX(0deg) rotateY(270deg);
+  }
+  49.8% {
+    -webkit-transform: rotateX(0deg) rotateY(360deg);
+            transform: rotateX(0deg) rotateY(360deg);
+  }
+  66.4% {
+    -webkit-transform: rotateX(180deg) rotateY(360deg);
+            transform: rotateX(180deg) rotateY(360deg);
+  }
+  83% {
+    -webkit-transform: rotateX(270deg) rotateY(360deg);
+            transform: rotateX(270deg) rotateY(360deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+            transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+@keyframes time {
+  0% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+            transform: rotateX(0deg) rotateY(0deg);
+  }
+  16.6% {
+    -webkit-transform: rotateX(0deg) rotateY(180deg);
+            transform: rotateX(0deg) rotateY(180deg);
+  }
+  33.2% {
+    -webkit-transform: rotateX(0deg) rotateY(270deg);
+            transform: rotateX(0deg) rotateY(270deg);
+  }
+  49.8% {
+    -webkit-transform: rotateX(0deg) rotateY(360deg);
+            transform: rotateX(0deg) rotateY(360deg);
+  }
+  66.4% {
+    -webkit-transform: rotateX(180deg) rotateY(360deg);
+            transform: rotateX(180deg) rotateY(360deg);
+  }
+  83% {
+    -webkit-transform: rotateX(270deg) rotateY(360deg);
+            transform: rotateX(270deg) rotateY(360deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+            transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+/*# sourceMappingURL=./01-trends.css.map */

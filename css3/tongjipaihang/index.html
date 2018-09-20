@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jQ/jquery.js"></script>
+    <link rel="stylesheet" href="less/02-style-chta.css">
+</head>
+
+<body>
+    <div class="stage">
+        <div class="chart">
+        <!--<img src="imegs/1.jpg">-->
+            <li><span class="curve-1"></span></li>
+            <li><span class="curve-2"></span></li>
+            <li><span class="curve-3"></span></li>
+            <li><span class="curve-4"></span></li>
+        </div>
+    </div>
+    <script>
+        $('.chart').click(function (e) {
+            $(this).toggleClass('active');
+            e.preventDefault();
+
+        });
+    </script>
+</body>
+
+</html>

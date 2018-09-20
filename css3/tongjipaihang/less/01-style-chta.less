@@ -1,0 +1,45 @@
+.side-box {
+    perspective: 500px;
+    .inner {
+        width: 200px;
+        height: 300px;
+        margin: 0 auto;
+        background: navajowhite;
+        font-size: 0px;
+        text-align: center;
+        transform: rotateX(45deg) rotateY(0deg);
+        transform-style: preserve-3d;
+        li {
+            width: 15px;
+            height: 15px;
+            list-style: none;
+            margin: 150px 5px;
+            display: inline-block;
+            position: relative;
+            /*background: burlywood;*/
+            [class^=curve-] {
+                width: 50px;
+                font-size: 12px;
+                display: inline-block;
+                background: burlywood;
+                transform-origin: 0% 50% 0;
+                position: absolute;
+                transform:rotate(45deg) rotateY(-90deg);
+            }
+            &:before {
+                content: '100';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 15px;
+                background: orange;
+                transform-origin: 20% 90% 0;
+                transform:  rotateY(45deg) rotateX(-90deg);
+            }
+        }
+    }
+}
+.active {
+    transform: rotateX(45deg);
+}

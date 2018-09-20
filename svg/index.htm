@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>脑壳疼</title>
+    <link rel="stylesheet" href="less/style.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="side">
+            <svg class="svg">
+                <rect x="40" y="0" width="6" height="10" style="fill:rgb(230, 66, 66)">
+                    <animateTransform attributeType="xml" attributeName="transform" type="scale" values="1,1; 1,3; 1,1"
+                        begin="0s" dur="0.6s" repeatCount="indefinite"></animateTransform>
+                    <animate attributeType="XML" attributeName="opacity" values=".2;1;.5" begin="0" dur="0.6s"
+                        repeatCount="indefinite" />
+                </rect>
+                <rect x="50" y="0" width="6" height="10" style="fill:rgb(230, 66, 66)">
+                    <animateTransform attributeType="xml" attributeName="transform" type="scale" values="1,3; 1,1; 1,3"
+                        begin="0.2s" dur="0.6s" repeatCount="indefinite"></animateTransform>
+                    <animate attributeType="XML" attributeName="opacity" values=".2;1;.5" begin="0.2s" dur="0.6s"
+                        repeatCount="indefinite" />
+                </rect>
+                <rect x="60" y="0" width="6" height="10" style="fill:rgb(230, 66, 66)">
+                    <animateTransform attributeType="xml" attributeName="transform" type="scale" values="1,1; 1,3; 1,1"
+                        begin="0.4s" dur="0.6s" repeatCount="indefinite"></animateTransform>
+                    <animate attributeType="XML" attributeName="opacity" values=".2;1;.5" begin="0.4s" dur="0.6s"
+                        repeatCount="indefinite" />
+                </rect>
+            </svg>
+        </div>
+        <div class="side">
+            <svg class="svg">
+                <rect x="40" y="0" width="4" height="5" style="fill:rgb(230, 66, 66)">
+                    <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0"
+                        begin="0.2s" dur="0.6s" repeatCount="indefinite"></animateTransform>
+                </rect>
+                <rect x="50" y="0" width="4" height="5" style="fill:rgb(230, 66, 66)">
+                    <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0"
+                        begin="0" dur="0.6s" repeatCount="indefinite"></animateTransform>
+                </rect>
+                <rect x="60" y="0" width="4" height="5" style="fill:rgb(230, 66, 66)">
+                    <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0 0; 0 20; 0 0"
+                        begin="0.4s" dur="0.6s" repeatCount="indefinite"></animateTransform>
+                </rect>
+            </svg>
+        </div>
+        <div class="side">
+            <svg class="svg">
+                <rect x="40" y="0" width="6" height="15" style="fill:chartreuse">
+                    <animate attributeType="XML" attributeName="opacity" values=".2;1;.5" begin="0" dur="0.6s"
+                        repeatCount="indefinite" />
+                </rect>
+                <rect x="50" y="0" width="6" height="15" style="fill:chartreuse">
+                    <animate attributeType="XML" attributeName="opacity" values=".2;1;.5" begin="0.2s" dur="0.6s"
+                        repeatCount="indefinite" />
+                </rect>
+                <rect x="60" y="0" width="6" height="15" style="fill:chartreuse">
+                    <animate attributeType="XML" attributeName="opacity" values=".2;1;.5" begin="0.4" dur="0.6s"
+                        repeatCount="indefinite" />
+                </rect>
+            </svg>
+        </div>
+        <div class="side">
+            <svg class="svg">
+                <circle cx="50" cy="20" r="12" class="circle" />
+                <circle cx="50" cy="20" r="12" class="circle-dot">
+                    <animate attributeType="XML" attributeName="stroke-dasharray" from="0" to="75" dur="5s" repeatCount="indefinite" />
+                </circle>
+            </svg>
+        </div>
+        <hr>
+        <i>css</i>
+        <br>
+        <div class="side">
+            <div class="inner">
+                <i class="strip-one"></i>
+                <i class="strip-two"></i>
+                <i class="strip-three"></i>
+            </div>
+        </div>
+        <div class="side">
+            <svg class="svg">
+                <circle cx="50" cy="20" r="12" style="fill: none; stroke: rgba(0,0,0,0.1); stroke-width: 3;"></circle>
+                <circle cx="50" cy="20" r="12" style="fill: none; stroke: orange; stroke-width: 3; stroke-dasharray:100; stroke-dashoffset:20;">
+                    <animate attributeType="XML" attributeName="stroke-dashoffset" from="100" to="20" dur="3s" repeatCount="indefinite" />
+                </circle>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>

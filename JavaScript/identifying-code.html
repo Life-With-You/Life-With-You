@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>js简单验证码使用</title>
+<style>
+    #box{
+        width: 400px;
+        height: 50px;
+        margin: 100px auto;
+    }
+    .code{
+         font-size:15px;
+         letter-spacing:3px;
+         font-weight:bolder;
+        border: 1px solid #000;
+         float:left;
+         width:150px;
+         height:50px;
+         line-height:60px;
+         text-align:center;
+         background-color: #d6e3bc;
+     }
+     span {
+         display: inline-block;
+         width:90px;
+         height:50px;
+        font-size:12px;
+        color: #6da5d8;
+        line-height: 50px;
+         text-align:center;
+        padding-left:10px;
+    }
+    span:hover {
+        text-decoration:underline;
+        cursor:pointer;
+    }
+</style>
+</head>
+<script>
+    window.onload=function(){
+     yanZheng(6);
+    }
+    function yanZheng(length) {
+        var code = "";
+        var codeLength = parseInt(length); //验证码的长度
+        var checkCode = document.getElementById("ck");
+        var codeChars = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+        'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
+        'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
+        for (var i = 0; i < codeLength; i++){
+            var charNum = Math.floor(Math.random() * 62);
+            code += codeChars[charNum];
+        }
+        if (checkCode){
+            checkCode.className = "code";
+            checkCode.innerHTML = code;
+        }
+    }
+</script>
+<body>
+    <div id="box">
+          <div id="ck" class="code"  onclick="yanZheng(6)" ></div>
+          <span onclick="yanZheng(6)">看不清换一张</span>
+    </div>
+</body>
+</html>

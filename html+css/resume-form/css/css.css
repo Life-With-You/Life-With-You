@@ -1,0 +1,21 @@
+/**{
+    margin: 0;
+    padding: 0;
+}*/
+/*td{
+
+    display: inline-block;
+}*/
+/*简历表格*/
+th,td{
+    width: 114px;
+    height: 30px;
+}
+/*学习、工作经历*/
+.t1 tr td{
+
+    height: 31px;
+}
+.t1 th{
+    border-top:none ;
+}
