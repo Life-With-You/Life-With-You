@@ -13,8 +13,6 @@
 
 [简历表单](https://Life-With-You.github.io/html+css/resume-form)
 
-[显示与隐藏图片](https://Life-With-You.github.io/jQuery)
-
 [控制弹弹](https://Life-With-You.github.io/JavaScript/Projectile.html)
 
 [验证码](https://Life-With-You.github.io/JavaScript/identifying-code.html)
