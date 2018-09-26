@@ -1,0 +1,32 @@
+.containerv{
+		box-shadow: 5px 5px 15px 10px #888888;
+		margin: 50px auto;
+		background: #0000FF;
+		color: #fff;
+		animation: loginin .5s;
+		max-width: 350px;
+		border-radius: 10px;
+}
+@keyframes loginin{
+	from{
+		top:-10%;
+	}
+	to{
+		top:50%;
+	}
+}
+.h2center{
+	text-align: center;
+}
+.containerbtn{
+	text-align: center;
+	
+}
+.containerbtn>button{
+	margin: 10px 10px;
+}
+.nemt{
+	
+	height: 50px;
+	margin: 10px auto;
+}

@@ -1,0 +1,24 @@
+(function($){
+	$('#loginForm').validate({
+		rules:{
+			userName:{
+				required:true,
+				rangelength:[5,18]
+			},
+			pwd:{
+				required:true,
+				rangelength:[5,18],
+			}
+		},
+		messages:{
+			userName:{
+				required:"账号不能为空",
+				rangelength:"账号长度为5-18位"
+			},
+			pwd:{
+				required:"密码不能为空",
+				rangelength:"密码长度为5-18位"
+			}
+		},
+	});
+})(jQuery);

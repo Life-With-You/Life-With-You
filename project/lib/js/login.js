@@ -1,0 +1,54 @@
+(function($){
+	$('#loginForm').validate({
+		rules:{
+			userName:{
+				required:true,
+				rangelength:[3,20]
+			},
+			pwd:{
+				required:true,
+				rangelength:[5,20],
+			},
+		},
+		messages:{
+			userName:{
+				required:"账号不能为空",
+				rangelength:"账号长度为3-20位",
+			},
+			pwd:{
+				required:"密码不能为空",
+				rangelength:"密码长度为5-20位",
+			},
+		},
+		unhighlight:function(element,error,errorClass){
+				console.log(this);
+				$(element).tooltip('destroy');
+		},
+		errorPlacement:function(e,i){
+			if($(i).next('.tooltip').length>=1
+			){
+				$(i).attr('data-original-title',e.text()).tooltip('show');
+			}else{
+				$(i).attr('title',e.text()).tooltip();
+			}
+		},
+		submitHandler:function(){
+			
+			$('[type="submit"]').button('loading');
+			$.post('http://192.168.15.2/gz0820web/login',$('.form').serializeArray(),function(data){
+				if(data.status!=1){
+					$('[type="submit"]').button('reset');
+					console.log(data.msg)
+				}else{
+					console.log('a')
+					setInterval(function(){
+						location.href="manage.html";
+					},5000);
+				}
+				$('.modal-body').text(data.msg);
+				$('.modal').modal();
+			},'json');
+			return false;
+		}
+	});
+})(jQuery);

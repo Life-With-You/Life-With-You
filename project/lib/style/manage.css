@@ -1,0 +1,31 @@
+html,body{
+	height:100%;
+	min-width: 500px;
+}
+.navbar .badge{
+	background:#5cb85c;
+}
+
+.main{
+	
+	padding-top:51px;
+}
+.main .navbar{
+	border-right:0px;
+	margin:0px -15px;
+}
+.main,.main>.row,.main .leftbar{
+	height:100%;
+}
+.main .leftbar{
+	overflow-y:auto;
+}
+.main .nav > li > a{
+	color:#ddd;
+}
+.nav > li > a:hover, .nav > li > a:focus{
+	background-color:#111;
+}
+.navwidth{
+	width: 200px
+}
