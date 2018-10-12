@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    .yellow{
+        background: yellow;
+    }
+</style>
+<body>
+    <table border="1" cellspacing="0" cellspacing="">
+        <caption>员工信息</caption>
+        <tr>
+            <th></th>
+            <th>姓名</th>
+            <th>薪水</th>
+            <th>年龄</th>
+        </tr>
+        <tr class="tr">
+            <td><input type="checkbox" class="checkbox"></td>
+            <td>张三</td>
+            <td>20000</td>
+            <td>23</td>
+        </tr>
+        <tr class="tr">
+            <td><input type="checkbox" class="checkbox"></td>
+            <td>李四</td>
+            <td>20000</td>
+            <td>23</td>
+        </tr>
+        <tr class="tr">
+            <td><input type="checkbox" class="checkbox"></td>
+            <td>王五</td>
+            <td>20000</td>
+            <td>23</td>
+        </tr>
+        <tr class="tr">
+            <td><input type="checkbox" class="checkbox"></td>
+            <td>马六</td>
+            <td>20000</td>
+            <td>23</td>
+        </tr>
+    </table>
+    <script>
+$(function(){
+     $('table').css('width',600);
+        $('tr:eq(0)').css('background','#ccc');
+        var input = $('.checkbox')
+            // console.log(input)
+        $('.checkbox').change(function() {
+            if (this.checked) {
+                $(this).parent().parent().addClass('yellow')
+            }else{
+                $(this).parent().parent().removeClass('yellow')
+            }
+        })
+        // for (let i = 0; i < input.length; i++) {
+        //     var checkedTrue = input[i]
+        //     if (checkedTrue.checked == true) {
+        //         var tr = $('.tr').eq(i)
+        //         tr.css('background','yellow')
+        //         console.log('====');
+        //     }
+        // }
+})
+       
+        
+        
+    </script>
+</body>
+
+</html>

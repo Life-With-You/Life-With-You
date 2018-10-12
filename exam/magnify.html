@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>Document</title>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#fdj{
+				width: 1145px;
+				margin: 20px auto;
+			}
+			.smali{
+				width: 350px;
+				height: 450px;
+				border: 1px solid #000000;
+				float: left;
+				position: relative;
+			}
+			.smali div{
+				width: 175px;
+				height: 175px;
+				background: rgba(0,0,0,0.1);
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: none;
+				cursor: move;
+			}
+			.big{
+				overflow: hidden;
+				width: 400px;
+				height: 400px;
+				display: none;
+				
+				border: 1px solid #000000;
+				float: left;
+				
+			}
+			.big img{
+				
+				display: block;
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="fdj">
+			<div class="smali">
+				<img src="meinv.png" width="350"/>
+				<div class="pop">
+					
+				</div>
+			</div>
+			<div class="big">
+				<img src="meinv.png" width="800px" height="800px"/>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var smali = document.getElementsByClassName("smali")[0]
+		var pop = document.getElementsByClassName("pop")[0]
+		var big = document.getElementsByClassName("big")[0]
+		var img = document.getElementsByTagName("img")[1]
+		
+		var maxLeft;
+		var maxTop;
+		
+		smali.addEventListener("mouseover",function(){
+			
+			pop.style.display = "block"
+			big.style.display = "block"
+			maxLeft = smali.offsetWidth - pop.offsetWidth
+			maxTop = smali.offsetHeight - pop.offsetHeight
+		},false)
+		//移动事件
+		smali.addEventListener("mousemove",function(e){
+			var popLeft = e.clientX - smali.offsetLeft -pop.offsetWidth / 2
+			var popTop = e.clientY - smali.offsetTop -pop.offsetHeight / 2
+			
+			popLeft = popLeft <= 0 ? 0 :popLeft
+			popTop = popTop <= 0 ? 0 :popTop
+			//限制右，下边界
+			popLeft = popLeft >= maxLeft ? maxLeft : popLeft
+			popTop = popTop >= maxTop ? maxTop : popTop
+			pop.style.left = popLeft + "px"
+			pop.style.top = popTop + "px"
+			img.style.left = -popLeft / maxLeft * 400 + "px"
+			img.style.top = -popTop / maxTop * 400 + "px"
+		},false)
+		smali.addEventListener("mouseout",function(event){
+			pop.style.display = "none"
+			big.style.display = "none"
+		},false)
+	</script>
+
+</html>

@@ -24,3 +24,5 @@
 [后台(未完善)](https://life-with-you.github.io/project/)
 
 [千年历](https://life-with-you.github.io/JavaScript/万年日历.html)
+
+[考试(表单)](https://life-with-you.github.io/exam/magnify.html)
