@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		*{
+		margin:0px;
+		padding:0px;
+	}
+	.banner{
+		width:453px;
+		height:224px;
+		overflow: hidden;
+		position: relative;
+		margin:100px auto;
+	}
+	</style>
+	<script type="text/javascript">
+		$.fn.extend({
+			playImg: 0,
+			imgNum: 0,
+			imgWidth: 0,
+			initial: function () {
+				var o = this;
+				var firstImg = this.children('img').first().clone();
+				this.append(firstImg);
+				var $imgs = this.children('img');
+				this.imgNum = $imgs.length;
+				this.imgWidth = $imgs.width();
+				$imgs.wrapAll('<div id="box"/>');
+				var divWidth = this.imgNum * this.imgWidth;
+				this.find('div').css({
+					width: divWidth,
+					height: 224,
+					position: 'absolute'
+				});
+			},
+			nextImg: function () {
+				var o = this;
+				var moveWidth = -this.playImg * this.imgWidth;
+				this.playImg++;
+				this.find('div#box').animate({
+					left: moveWidth
+				}, 500, function () {
+
+					if (o.playImg >= o.imgNum) {
+						o.playImg = 0;
+						o.find('div').css({
+							left: 0
+						});
+						o.nextImg();
+					}
+				});
+
+			},
+			autoPlay: function () {
+				var o = this;
+				window.setInterval(function () {
+					o.nextImg();
+				}, 1000);
+			},
+			imgscroll: function () {
+				this.initial();
+				this.autoPlay();
+			},
+		});
+
+		$(function () {
+			$('.banner').imgscroll();
+		});
+	</script>
+</head>
+
+<body>
+	<div class="banner">
+		<img src="1.jpeg" />
+		<img src="2.jpeg" />
+		<img src="3.jpeg" />
+	</div>
+</body>
+
+</html>

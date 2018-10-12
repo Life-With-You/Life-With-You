@@ -25,4 +25,10 @@
 
 [千年历](https://life-with-you.github.io/JavaScript/万年日历.html)
 
+[放大境](https://life-with-you.github.io/exam/magnify.html)
+
 [考试(表单)](https://life-with-you.github.io/exam/from.html)
+
+[考试(放大镜)](https://life-with-you.github.io/exam/放大镜.html)
+
+[考试(轮播图)](https://life-with-you.github.io/exam/carousel.html)
