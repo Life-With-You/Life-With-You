@@ -13,6 +13,7 @@
         background: yellow;
     }
 </style>
+
 <body>
     <table border="1" cellspacing="0" cellspacing="">
         <caption>员工信息</caption>
@@ -48,30 +49,27 @@
         </tr>
     </table>
     <script>
-$(function(){
-     $('table').css('width',600);
-        $('tr:eq(0)').css('background','#ccc');
-        var input = $('.checkbox')
+        $(function () {
+            $('table').css('width', 600);
+            $('tr:eq(0)').css('background', '#ccc');
+            var input = $('.checkbox')
             // console.log(input)
-        $('.checkbox').change(function() {
-            if (this.checked) {
-                $(this).parent().parent().addClass('yellow')
-            }else{
-                $(this).parent().parent().removeClass('yellow')
-            }
+            $('.checkbox').change(function () {
+                if (this.checked) {
+                    $(this).parents('tr').addClass('yellow')
+                } else {
+                    $(this).parents('tr').removeClass('yellow')
+                }
+            })
+            // for (let i = 0; i < input.length; i++) {
+            //     var checkedTrue = input[i]
+            //     if (checkedTrue.checked == true) {
+            //         var tr = $('.tr').eq(i)
+            //         tr.css('background','yellow')
+            //         console.log('====');
+            //     }
+            // }
         })
-        // for (let i = 0; i < input.length; i++) {
-        //     var checkedTrue = input[i]
-        //     if (checkedTrue.checked == true) {
-        //         var tr = $('.tr').eq(i)
-        //         tr.css('background','yellow')
-        //         console.log('====');
-        //     }
-        // }
-})
-       
-        
-        
     </script>
 </body>
 
