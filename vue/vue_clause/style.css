@@ -1,0 +1,107 @@
+.container {
+    margin: 10px auto;
+    width: 800px;
+}
+
+.el-row {
+    margin-bottom: 20px;
+}
+
+.headRow {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.el-button-group {
+    display: block;
+}
+
+.el-button-group .el-button--primary {
+    width: 33.4%;
+}
+
+.el-row:last-child {
+    margin-bottom: 0;
+}
+
+.el-col {
+    border-radius: 4px;
+}
+
+.el-col:first-of-type {
+    background: white;
+}
+
+.bg-purple-dark {
+    background: #99a9bf;
+}
+
+.bg-purple {
+    background: #d3dce6;
+}
+
+.bg-purple-light {
+    background: #e5e9f2;
+}
+
+.grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+}
+
+.row-bg {
+    padding: 10px 0;
+    background-color: #f9fafc;
+}
+
+.el-header,
+.el-footer {
+    background-color: #B3C0D1;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+}
+
+.el-aside {
+    background-color: #D3DCE6;
+    color: #333;
+    text-align: center;
+    line-height: 200px;
+}
+
+.el-main {
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
+    line-height: 160px;
+}
+
+body>.el-container {
+    margin-bottom: 40px;
+}
+
+.el-main {
+    line-height: 0;
+}
+
+.text {
+    text-align: left;
+    background: white;
+    font-size: 0.7em;
+}
+
+.textSuccess {
+    color: green;
+}
+
+.text2 {
+    text-align: left;
+}
+
+.aside {
+    line-height: 3;
+}
+
+.el-icon-warning {
+    color: red;
+}
