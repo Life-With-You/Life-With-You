@@ -1,0 +1,26 @@
+<%- include('./componest/haed') %>
+
+	<%- include('./componest/post-content') %>
+
+	<div class="row ">
+	<div class="col-xs-2">
+	</div>
+	<div class="col-xs-8">
+		<div class="panel panel-default shadow">
+			<div class="panel-heading">留言</div>
+				<%- include('./componest/commenter') %>
+				 <div class="panel-footer">
+				 <form action="/comments/<%= post._id %>" method="POST">
+                    <div class="form-group">
+                        <textarea type="text" rows="2" class="form-control" id="content" name="content"
+                                  placeholder="留言"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-info form-control">留言</button>
+                    </div>
+                </form>
+				</div>
+		</div>
+	</div>
+
+<%- include('./componest/footer') %>

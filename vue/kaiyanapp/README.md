@@ -1,16 +1,16 @@
 # kaiyan
 
-## Project setup
+## Project setup 安装依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for development 打开服务器
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies for production 打包
 ```
 npm run build
 ```

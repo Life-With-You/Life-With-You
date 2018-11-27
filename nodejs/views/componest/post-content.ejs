@@ -1,0 +1,35 @@
+<div class="row ">
+    <div class="col-xs-2">
+        <a href="/posts?author=<%= post.author._id %>"> 
+              <img src="/uploads/<%= post.author.avatar %>" class="img-circle shadow" width="60" data-toggle="tooltip"%> 
+                 data-placement="bottom" title="<%= post.author.username %>">  
+        </a>
+    </div>
+    <div class="col-xs-8">
+        <div class="panel panel-default shadow">
+            <div class="panel-heading"><a href="/posts/<%= post._id %>"><%= post.title %></a></div>
+            <div class="panel-body">
+                <%= post.content %> 
+            </div>
+            <div class="panel-footer clearfix">
+                <div class=" pull-left">
+                    <small><%= post.creationTime.toLocaleString() %></small>
+                </div>
+                <div class=" pull-right dropup">
+                    <small>浏览(<%= post.pv %>)</small>
+                    <small>留言(0)</small>
+                    
+                    <% if (user) { %>
+                        <% if (post.author._id == user._id) { %>
+                            <small class="glyphicon glyphicon-triangle-bottom dropdown-toggle" data-toggle="dropdown"></small>
+                            <ul class="dropdown-menu dropdown-menu-top">
+                                <li><a href="#">编辑</a></li>
+                                <li><a href="/posts/<%= post._id %>/remove">删除</a></li>
+                            </ul>
+                        <% } %>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

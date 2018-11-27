@@ -1,0 +1,43 @@
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-setting {
+        position: absolute;
+        top: 0;
+        right: 1.5rem;
+    }
+
+    .post .panel-footer .name {
+        display: inline-block !important;
+        margin-right: 1rem;
+    }
+}
+
+body {
+    background: url('../img/12.jpg')
+}
+
+.hust {
+    position: relative;
+}
+
+.menu {
+    margin: 3rem;
+}
+
+.dropdown-menu {
+    min-width: 100px;
+}
+
+/* 公共阴影 */
+
+.shadow {
+    box-shadow: 2px 5px 16px -3px #ccc;
+}
+hr{
+    margin: 0;
+}

@@ -1,0 +1,6 @@
+<%- include('./componest/haed') %>
+
+<% post.forEach(element => { %>
+    <%- include('./componest/post-content',{post:element}) %>
+<% }) %>
+<%- include('./componest/footer') %>

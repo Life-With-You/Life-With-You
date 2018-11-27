@@ -27,4 +27,8 @@
 
 [放大境](https://life-with-you.github.io/exam/magnify.html)
 
-[盗版开眼](https://life-with-you.github.io/vue/kaiyanapp/dist/)
+[盗版开眼](https://life-with-you.github.io/vue/kaiyanapp/dist/index.html)
+
+[备忘录](https://life-with-you.github.io/vue/vue_clause/index.html) element，vue框架 
+
+[仿百度贴吧](https://life-with-you.github.io/nodejs/)
