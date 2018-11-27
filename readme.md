@@ -1,7 +1,7 @@
 [ajax搞笑大全](https://Life-With-You.github.io/ajax/)
  请于手机端形式打开
  
-[bootstion轮播图简略](https://Life-With-You.github.io/bootstrap/Rotation-chart/) 
+[bootstion轮播图简略](https://Life-With-You.github.io/bootstrap/)
 
 [统计排行](https://Life-With-You.github.io/css3/tongjipaihang/) 
 
@@ -27,8 +27,3 @@
 
 [放大境](https://life-with-you.github.io/exam/magnify.html)
 
-[考试(表单)](https://life-with-you.github.io/exam/from.html)
-
-[考试(放大镜)](https://life-with-you.github.io/exam/放大镜.html)
-
-[考试(轮播图)](https://life-with-you.github.io/exam/carousel.html)
