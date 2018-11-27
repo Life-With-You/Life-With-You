@@ -31,4 +31,4 @@
 
 [备忘录](https://life-with-you.github.io/vue/vue_clause/index.html) element，vue框架 
 
-[仿百度贴吧](https://life-with-you.github.io/nodejs/)
+[仿百度贴吧](https://github.com/Life-With-You/Life-With-You.github.io/tree/master/nodejs)
