@@ -27,3 +27,4 @@
 
 [放大境](https://life-with-you.github.io/exam/magnify.html)
 
+[盗版开眼](https://life-with-you.github.io/vue/kaiyanapp/dist/)
