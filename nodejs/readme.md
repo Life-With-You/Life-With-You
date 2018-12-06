@@ -24,10 +24,10 @@ mongod.exe --remove 移除MongoDB
 node index.js
 ```
 
-###主页
+### 主页
 ![首页](./image/icon_past.png)
 
-###登录后
+### 登录后
 ![登录之后](./image/icon_loge.png)
 
 ### 个人主页
